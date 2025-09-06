@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EcoFinds - Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <img src="images/logo.png" class="logo" alt="EcoFinds Logo">
+  <h1>Welcome <span id="username"></span></h1>
+  <a href="add_product.html">Add New Product</a> |
+  <a href="my_listings.html">My Listings</a> |
+  <a href="cart.html">Cart</a> |
+  <a href="previous.html">Previous Purchases</a> |
+  <button onclick="resetApp()">Reset App</button>
+  <hr>
+  <input type="text" id="search" placeholder="Search products by title" onkeyup="renderProductFeed()">
+  <div id="productFeed"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
